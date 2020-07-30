@@ -47,8 +47,12 @@ Hooks.on('preUpdateMeasuredTemplate', (scene, entity, data, options, user) => {
  */
 Hooks.on('updateMeasuredTemplate', async (scene, entity, data) => {
   const t = getTemplate(entity._id);
-  if (entity?.flags?.bettertemplates?.borderOpacity !== undefined) t.template.template.alpha = data.borderOpacity;
-  if (entity?.flags?.bettertemplates?.fillOpacity !== undefined) t.grid.alpha = data.fillOpacity;
+  if (entity?.flags?.bettertemplates?.borderOpacity !== undefined) {
+    t.template.template.alpha = entity.flags.bettertemplates.borderOpacity;
+  } 
+  if (entity?.flags?.bettertemplates?.fillOpacity !== undefined) {
+    t.grid.alpha = entity.flags.bettertemplates.fillOpacity;
+  }
 });
 
 /*
