@@ -1,0 +1,25 @@
+{
+  "name": "bettertemplates",
+  "version": "0.1.0",
+  "description": "Improved templates for Foundry VTT",
+  "main": "foundry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanceCole/bettertemplates.git"
+  },
+  "author": "Vance Cole",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VanceCole/bettertemplates/issues"
+  },
+  "homepage": "https://github.com/VanceCole/bettertemplates#readme",
+  "devDependencies": {
+    "eslint": "^7.5.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "gulp": "^4.0.2"
+  }
+}
